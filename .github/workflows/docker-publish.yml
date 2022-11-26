@@ -18,8 +18,7 @@ jobs:
       id-token: write
   
   steps:
-    - name: Checkout repo
-      uses: actions/checkout@v2
+    uses: actions/checkout@v2
 
     # - name: Install cosign
     #   uses: sigstore/cosign-installer@main
