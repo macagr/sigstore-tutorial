@@ -6,9 +6,9 @@ on:
   push:
     branches: [ main ]
       # Publish semver tags as releases.
-      tags: [ 'v*.*.*' ]
-    pull_request:
-      branches: [ main ] # Workflow for pull request
+    tags: [ 'v*.*.*' ]
+  pull_request:
+    branches: [ main ] # Workflow for pull request
 jobs:
   build:
       runs-on: ubuntu-latest
