@@ -5,7 +5,7 @@ on:
     - cron: '32 11 * * *' # creating a schedule and cron job
   push:
     branches: [ main ]
-      # Publish semver tags as releases.
+    # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
   pull_request:
     branches: [ main ] # Workflow for pull request
@@ -16,6 +16,7 @@ jobs:
       contents: read
       packages: write
       id-token: write
+  
   steps:
     - name: Checkout repo
       uses: actions/checkout@v2
