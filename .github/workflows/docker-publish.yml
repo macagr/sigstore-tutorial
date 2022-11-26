@@ -11,11 +11,11 @@ on:
     branches: [ main ] # Workflow for pull request
 jobs:
   build:
-      runs-on: ubuntu-latest
-      permissions:
-        contents: read
-        packages: write
-        id-token: write
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
   steps:
     - name: Checkout repo
       uses: actions/checkout@v2
